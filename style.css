@@ -1,0 +1,123 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#05060a;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+color:white;
+}
+
+/* TITLE */
+h1{
+text-align:center;
+margin-bottom:15px;
+color:#00f7ff;
+text-shadow:0 0 10px #00f7ff;
+}
+
+/* TEXT AREA */
+textarea{
+width:100%;
+height:140px;
+margin-bottom:20px;
+padding:15px;
+font-size:20px;
+background:#0a0f1f;
+border:none;
+border-radius:12px;
+color:white;
+box-shadow:0 0 20px rgba(0,255,255,0.3);
+}
+
+/* KEYBOARD */
+.keyboard{
+width:100%;
+max-width:1200px;
+padding:25px;
+border-radius:20px;
+background:#0b0f1a;
+box-shadow:0 0 40px rgba(0,255,255,0.2);
+}
+
+/* ROW */
+.row{
+display:flex;
+justify-content:center;
+gap:10px;
+margin:10px 0;
+flex-wrap:wrap;
+}
+
+/* KEY SIZE BIG */
+.key{
+flex:1;
+min-width:60px;
+padding:18px;
+font-size:18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+color:white;
+background:#111827;
+transition:0.15s;
+text-transform:lowercase;
+
+/* RGB glow */
+box-shadow:
+0 0 5px #00f7ff,
+0 0 10px #ff00ff,
+0 0 15px #00ff88;
+}
+
+/* HOVER RGB ANIMATION */
+.key:hover{
+transform:scale(1.08);
+box-shadow:
+0 0 10px #00f7ff,
+0 0 20px #ff00ff,
+0 0 30px #00ff88;
+}
+
+/* PRESS EFFECT */
+.key:active{
+transform:scale(0.92);
+}
+
+/* SPECIAL KEYS */
+/* BACKSPACE (bigger) */
+.backspace{
+background:#ff004c;
+flex:2.5;   /* increased slightly */
+color:white;
+font-size:14px;
+}
+
+/* ENTER (bigger) */
+.enter{
+background:#00ff88;
+flex:1.8;   /* same size logic as backspace */
+}
+
+.shift{
+background:#ffcc00;
+color:black;
+}
+
+.caps{
+background:#00b7ff;
+flex:1.8
+}
+
+.space{
+flex:3;
+padding:22px;
+font-size:20px;
+background:#1f2937;
+}
